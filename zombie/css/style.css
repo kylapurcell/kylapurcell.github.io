@@ -25,7 +25,8 @@
     #count {
         color:greenyellow;
         font-size: 90px;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center
     }
 
     #restart {
