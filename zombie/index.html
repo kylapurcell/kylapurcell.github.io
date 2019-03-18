@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <img src = 'images/zombie1.gif'  id ='zombie'>
+    <img src ='images/explosion.gif' id ='explode'>
+    <img src ='images/policeman_walk.gif' id='zombie2'>
+    <img src ='images/explosion.gif'  id ='explode2'>
+    <button id ='restart'>Restart</button>
+    <p id = 'count'> 0 </p>
+   
+
+    <script>
+    let count = 0
+    let x = 50
+    let y = 80
+    let i = 100
+    let j = 300
+    let sound_effect = document.createElement('audio')
+    sound_effect.src = 'src/hit-arg.mp3'
+   
+    
+   
+
+    function move_zombie(){
+        let width = window.innerWidth
+        let height = window.innerHeight
+        x = Math.floor(Math.random()*(width-170)+1)
+        y =Math.floor(Math.random()*(height-150)+1)
+        document.getElementById('zombie').style.visibility='visible'
+        document.getElementById('zombie').style.position='absolute'
+        document.getElementById('zombie').style.left= x + 'px'
+        document.getElementById('zombie').style.top= y + 'px'
+        }
+
+        function move_zombie2(){
+        let width = window.innerWidth
+        let height = window.innerHeight
+        i = Math.floor(Math.random()*(width-170)+1)
+        j =Math.floor(Math.random()*(height-150)+1)
+        document.getElementById('zombie2').style.visibility='visible'
+        document.getElementById('zombie2').style.position='absolute'
+        document.getElementById('zombie2').style.left= i + 'px'
+        document.getElementById('zombie2').style.top= j + 'px'
+       
+        }
+
+
+        
+    function score_count() {
+        count ++
+        document.getElementById('count').innerHTML=count
+        
+        
+    }
+        
+    function turn_back() {
+        document.getElementById('explode').style.display='none'
+    }
+
+    function turn_back2(){
+        document.getElementById('explode2').style.display='none'
+    }
+
+
+    function explode_zombie() {
+        score_count()
+        document.getElementById('zombie').style.visibility='hidden'
+        document.getElementById('explode').style.display ='inline'
+        document.getElementById('explode').style.position='absolute'
+        document.getElementById('explode').style.left= x + 'px'
+        document.getElementById('explode').style.top= y + 'px'
+        sound_effect.play()
+        setTimeout(turn_back,600) 
+        }
+
+        function explode_zombie2() {
+        score_count()
+        document.getElementById('zombie2').style.visibility='hidden'
+        document.getElementById('explode2').style.display ='inline'
+        document.getElementById('explode2').style.position='absolute'
+        document.getElementById('explode2').style.left= i + 'px'
+        document.getElementById('explode2').style.top= j + 'px'
+        sound_effect.play()
+        setTimeout(turn_back2,600) 
+        }
+
+    function reset(){
+        count = 0
+        document.getElementById('count').innerHTML=count
+        document.getElementById('zombie').style.position='absolute'
+        document.getElementById('zombie').style.left= 50 + 'px'
+        document.getElementById('zombie').style.top= 80 + 'px'
+        document.getElementById('zombie2').style.position='absolute'
+        document.getElementById('zombie2').style.left= 100 + 'px'
+        document.getElementById('zombie2').style.top= 100 + 'px'
+
+    }
+    
+    function click_zombie() {
+        document.getElementById('zombie').onclick=explode_zombie
+        
+
+    }
+
+    function click_zombie2(){
+        document.getElementById('zombie2').onclick=explode_zombie2
+    }
+    function restart_game(){
+        document.getElementById('restart').onclick=reset
+    }
+
+    click_zombie2()
+    click_zombie()
+    restart_game()
+    setInterval(move_zombie,2000)
+    setInterval(move_zombie2,3000)
+   
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+    body {
+        background-image: url(../images/zombie_bg.png);
+        background-repeat:no-repeat;
+        background-size:cover
+    }
+    #zombie,#zombie2 {
+        width:170px;
+        height:150px;
+        position: absolute;
+        left:50px;
+        top:80px;
+        visibility: hidden;
+
+    }
+    #explode, #explode2 {
+        width:170px;
+        height:150px;
+        position: absolute;
+        left: 50px;
+        top:80px;
+        display: none;
+    }
+
+    #count {
+        color:greenyellow;
+        font-size: 90px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    #restart {
+        color:white;
+        background:red;
+        font-size: 70px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        display: block;
+        position    : absolute;
+        bottom      : 10px;
+        left        : 50%;
+        margin-left : -100px
+    }
