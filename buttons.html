@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+            function letter(n){
+                return String.fromCharCode(n+65)
+        }
+
+
+        function Create_Buttons(x){
+            for (i=0;i<x;i++){
+            let btn = document.createElement("BUTTON");
+            document.body.appendChild(btn);
+            btn.innerHTML=letter(i);
+            btn.setAttribute('value',letter(i))
+            btn.style.marginRight= '10' + 'px';
+            btn.style.width= '30' + 'px';
+            btn.onclick = function () {
+                console.log("Button " + " " + btn.value + " " + " was clicked" )
+            }
+
+            }
+        }
+
+        
+
+        Create_Buttons(26)
+
+
+    </script>
+</body>
+</html>
