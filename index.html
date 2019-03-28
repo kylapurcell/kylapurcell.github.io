@@ -1,35 +1,88 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head> 
         <title> Index </title>
         <style>
-        h1 {color:navy;font-family:fantasy}
-        a { text-decoration: none;color:darkslateblue}
+        h1 {color:royalblue;font-family:fantasy; text-align: center;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 5px;}
+        h3{color:royalblue}
+        p{ overflow:auto; 
+        max-width: 800px; 
+        max-height: 200px;
+        display:inline-block}
+        a { text-decoration: none;
+        color:whitesmoke}
         b {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
-        .first {color:navy}
-        .second {color:darkorchid}
-        .third {color:royalblue}
-        #course {border: 2px solid black; background-color: rgb(250, 241, 206)}
-        #program {border: 2px dotted black;background-color:lightcyan}
-        #business{ border:2px double black;background-color:lightyellow}
-        #math {border:2px solid mediumblue;background-color: mintcream}
-        #fundamental{ border:2px solid black;background-color: whitesmoke}
-        #comm{border:2px dotted black;background-color: lightblue}
-        #project{border:2px double black;background-color:lightgreen }
+        #classes {max-width:800px;
+        text-align: center;
+        overflow:auto;}
+        .first {color:white}
+        .second {color:white}
+        .third {color:white}
+        #first{text-align:center}
+        #course {border: 2px solid black; 
+        background-color:slateblue }
+        #program {border: 2px dotted black;
+        background-color:royalblue}
+        #business{ border:2px double black;
+        background-color:slateblue}
+        #math {border:2px solid mediumblue;
+        background-color: royalblue}
+        #fundamental{ border:2px solid black;
+        background-color:slateblue}
+        #comm{border:2px dotted black;
+        background-color:royalblue}
+        #project{border:2px double black;
+        background-color:slateblue }
+        #links{position: fixed;
+             right: 0px;
+            width: 300px;
+            border: 3px solid lightskyblue;
+            padding: 10px;
+            top:400px;
+            float:left;
+            line-height: 200px}
+        #picture{float:left; 
+        width: 142px; 
+        height:142px}
+        #cat{float:right;
+        width:142px; 
+        height:142px}
+       
         </style>
     </head>
 
     <body style ="background-color:lavender">
+        <div id = 'first'>
         <h1>About me</h1>
         
 
-        <img src="images/pictureofself.png" alt = "Photo Of Me" width = "142" height ="142">
+        <img id ='picture' src="images/pictureofself.png" alt = "Photo Of Me" >
+        <img src ="images/catgif.gif"  id = 'cat'>
 
         <p> My name is Kyla, I am a first year CST student at BCIT. I also have a biology degree from UBC, I hope to
             in the future to integrate my degree with my coding experience that I will gain at BCIT. Below is a list of all the
-        courses I am currently taking at BCIT with links to their descriptions.</p>
-        <h3> My Courses</h3>
+        courses I am currently taking at BCIT with links to their descriptions. I am adding a bunch of things to this section so that the scroll
+    bar will work, please look at the scroll bar. It is such a cool feature of my site, along with all the other css stuff I have added. <br>
+    <br>Overflow, float, etc.I know this site kind of looks like it was built in 1998 but thats okay because I am just learning.
+    More text , more text, more text, more text. I am trying to add more text, text I want this scroll bar to be showcased and have a purpose. Here is a bunch of random text I got off a generator to add to this section. <br>
+    <br>Are own design entire former get should. Advantages boisterous day excellence boy. Out between our two waiting wishing. Pursuit he he garrets greater towards amiable so placing. Nothing off how norland delight.
+    Abode shy shade she hours forth its use. Up whole of fancy ye quiet do. Justice fortune no to is if winding morning forming. 
+Ignorant branched humanity led now marianne too strongly entrance. Rose to shew bore no ye of paid rent form. Old design are dinner better nearer silent excuse.
+ She which are maids boy sense her shade. Considered reasonable we affronting on expression in. So cordial anxious mr delight. Shot his has must wish from sell nay.
+ Remark fat set why are sudden depend change entire wanted. Performed remainder attending led fat residence far. 
+Finished her are its honoured drawings nor. Pretty see mutual thrown all not edward ten. Particular an boisterous up he reasonably frequently.
+ Several any had enjoyed shewing studied two. Up intention remainder sportsmen behaviour ye happiness. Few again any alone style added abode ask. 
+ Nay projecting unpleasing boisterous eat discovered solicitude. Own six moments produce elderly pasture far arrival. Hold our year they ten upon.
+  Gentleman contained so intention sweetness in on resolving. 
+.</p>
+</div>
+
+     <div id ='classes'>
+        <h3><i> My Courses</i></h3>
         <ul>
             
             <div id ="course">
@@ -121,86 +174,23 @@
         
           </ul>
 
-        <h3> Important Links </h3>
-        <a href ="resume.html"> Next Page </a>
+        </div>
+
+        <div id = 'links'>
+
+        <h3> <b>Important Links<b></h3>
         <a href="https://www.bcit.ca/">
-            <img src="images/bcitlogo.png" alt="BCIT Logo Link" width="142" height="142" >
+            <img class ='picture' src="images/bcitlogo.png" alt="BCIT Logo Link" width="142" height="142" >
          </a>
          <a href="https://www.reddit.com/r/ProgrammerHumor/comments/8zq4ie/computer_scientist_vs_reality/">
-            <img src="images/mouse.png" alt="Funny Comp Sci Cartoons" width="142" height="142" >
+            <img class = 'cat' src="images/mouse.png" alt="Funny Comp Sci Cartoons" width="142" height="142" >
          </a>
 
-         <a href="images/kylaresume12.pdf" download> Download My Resume Here </a>
+        </div>
 
 
     </body>
 
 
 
-=======
-<!DOCTYPE html>
-<html>
-    <head> 
-        <title> Index </title>
-    </head>
 
-    <body>
-        <h1>My Website</h1>
-        <h3> About Me </h3>
-
-        <img src="images/pictureofself.png" alt = "Photo Of Me" width = "142" height ="142">
-
-        <p> My name is Kyla, I am a first year CST student at BCIT. I also have a biology degree from UBC, I hope to
-            in the future to integrate my degree with my coding experience that I will gain at BCIT. Below is a list of all the
-        courses I am currently taking at BCIT with links to their descriptions.</p>
-        <h3> My Courses</h3>
-        <ul>
-            <li>
-                <a href ="https://www.bcit.ca/study/outlines/20191086129"> Comp 1536 Introduction to Web Development</a>
-            </li>
-            <li>
-                <a href ="https://www.bcit.ca/study/outlines/20191086126"> Comp 1510 Programming Methods </a>
-            </li>
-            <li>
-                <a href ="https://www.bcit.ca/study/outlines/20191086130"> Comp 1712 Business Analysis and System Design  </a>
-            </li>
-
-            <li>
-                <a href ="https://www.bcit.ca/study/outlines/20191048068"> Comp 1113 Applied Mathematics  </a>
-            </li>
-
-            <li>
-              <a href ="https://www.bcit.ca/study/outlines/20191086121"> Comp 1100 CST Program Fundamentals  </a>
-
-
-            </li>
-
-            <li>
-                <a href ="https://www.bcit.ca/study/outlines/20191086120"> Comm 1116 Business Communications 1  </a>
-            </li>
-
-            <li>
-                <a href ="https://www.bcit.ca/study/outlines/20191086134"> Comp 1930 Projects 1  </a>
-            </li>
-            
-        
-          </ul>
-
-        <h3> Important Links </h3>
-        <a href ="resume.html"> Next Page </a>
-        <a href="https://www.bcit.ca/">
-            <img src="images/bcitlogo.png" alt="BCIT Logo Link" width="142" height="142" >
-         </a>
-         <a href="https://www.reddit.com/r/ProgrammerHumor/comments/8zq4ie/computer_scientist_vs_reality/">
-            <img src="images/mouse.png" alt="Funny Comp Sci Cartoons" width="142" height="142" >
-         </a>
-
-         <a href="images/kylaresume12.pdf" download> Download My Resume Here </a>
-
-
-    </body>
-
-
-
->>>>>>> 3f300a328dd444847bc090d12364ba62163064dc
-</html>
